@@ -14,7 +14,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Load the data from CSV file
 base_dir = os.path.dirname(__file__)  # Get folder path of app.py
 csv_path = os.path.join(base_dir, "BankFAQs.csv")  # Path to CSV in the same folder
-data = pd.read_csv("BankFAQs.csv")
+data = pd.read_csv(csv_path)
 
 # Define the vectorizer
 vectorizer = CountVectorizer()
