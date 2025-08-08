@@ -6,11 +6,14 @@
 
 import streamlit as st
 import pandas as pd
+import os
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.svm import SVC
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Load the data from CSV file
+base_dir = os.path.dirname(__file__)  # Get folder path of app.py
+csv_path = os.path.join(base_dir, "BankFAQs.csv")  # Path to CSV in the same folder
 data = pd.read_csv("BankFAQs.csv")
 
 # Define the vectorizer
