@@ -52,7 +52,7 @@ The chatbot is trained on BankFAQs.csv, which contains banking-related questions
 4.The app finds the most similar question in the predicted class and displays the corresponding answer.
 
 ### Technologies Used
-Python
-Streamlit
-Pandas
+Python,
+Streamlit,
+Pandas,
 Scikit-learn (SVM, CountVectorizer)
